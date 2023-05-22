@@ -13,3 +13,15 @@
   --font-weight-bold: 700;
   --font-family-primary: "Kumbh Sans", sans-serif;
 }
+
+/* || Global styles */
+body {
+  background-image: linear-gradient(
+    var(--color-soft-violet),
+    var(--color-soft-blue)
+  );
+  font-family: var(--font-family-primary);
+  color: var(--color-grayish-blue-200);
+  font-size: 0.75rem;
+  font-weight: var(--font-weight-regular);
+}
