@@ -1,0 +1,15 @@
+@import url("reset.css");
+
+/* || Custom properties */
+:root {
+  --color-dark-blue: hsl(238 29% 16%);
+  --color-soft-red: hsl(14 88% 65%);
+  --color-soft-violet: hsl(273 75% 66%);
+  --color-soft-blue: hsl(240 73% 65%);
+  --color-grayish-blue-300: hsl(237 12% 33%);
+  --color-grayish-blue-200: hsl(240 6% 50%);
+  --color-grayish-blue-100: hsl(240 5% 91%);
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+  --font-family-primary: "Kumbh Sans", sans-serif;
+}
