@@ -30,10 +30,24 @@ body {
 
 /* || FAQ accordion card component styles */
 .accordion-card {
-  margin: 1.5rem;
+  margin: 8.5rem 1.5rem 2rem;
   padding: 3rem 1.5rem;
   max-width: 20.4375rem;
   background-color: white;
+  background-image: url("../images/bg-pattern-mobile.svg");
+  background-position: 50% 0;
+  background-repeat: no-repeat;
   border-radius: 1.4375rem;
   box-shadow: 0 3.125rem 3.125rem -1.25rem hsl(261 75% 27% / 0.5);
+}
+
+.accordion-card::before {
+  content: "";
+  display: block;
+  margin-top: -9.8rem;
+  margin-inline: auto;
+  background: no-repeat url("../images/illustration-woman-online-mobile.svg");
+  max-width: 14.8125rem;
+  width: 100%;
+  height: 11.25rem;
 }
