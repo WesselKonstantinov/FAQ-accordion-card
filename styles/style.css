@@ -24,4 +24,16 @@ body {
   color: var(--color-grayish-blue-200);
   font-size: 0.75rem;
   font-weight: var(--font-weight-regular);
+  display: grid;
+  place-content: center;
+}
+
+/* || FAQ accordion card component styles */
+.accordion-card {
+  margin: 1.5rem;
+  padding: 3rem 1.5rem;
+  max-width: 20.4375rem;
+  background-color: white;
+  border-radius: 1.4375rem;
+  box-shadow: 0 3.125rem 3.125rem -1.25rem hsl(261 75% 27% / 0.5);
 }
