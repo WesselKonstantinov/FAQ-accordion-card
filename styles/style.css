@@ -45,6 +45,7 @@ body {
   content: "";
   display: block;
   margin-top: -9.8rem;
+  margin-bottom: 3.75rem;
   margin-inline: auto;
   background: no-repeat url("../images/illustration-woman-online-mobile.svg");
   max-width: 14.8125rem;
@@ -56,8 +57,9 @@ body {
   text-align: center;
   font-weight: var(--font-weight-bold);
   font-size: 2rem;
-  line-height: 1.25;
+  line-height: 1;
   color: var(--color-dark-blue);
+  margin-bottom: 1.1875rem;
 }
 
 .accordion-list {
