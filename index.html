@@ -16,18 +16,20 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles/style.css" />
+    <script defer src="script.js"></script>
     <title>Frontend Mentor | FAQ Accordion Card</title>
   </head>
   <body>
     <main>
       <div class="accordion-card">
         <h1 class="accordion-card__heading">FAQ</h1>
-        <div class="accordion">
-          <div class="accordion__item">
+        <ul class="accordion-list" role="list">
+          <li class="accordion" role="listitem">
             <h2 class="accordion__title">
               <button
                 type="button"
-                class="accordion__button"
+                class="accordion__button js-toggle"
+                aria-controls="accordion-panel-1"
                 aria-expanded="false"
               >
                 <span class="accordion__summary">
@@ -51,16 +53,19 @@
                 </svg>
               </button>
             </h2>
-            <p class="accordion__details">
-              You can invite up to 2 additional users on the Free plan. There is
-              no limit on team members for the Premium plan.
-            </p>
-          </div>
-          <div class="accordion__item">
+            <div class="accordion__panel" id="accordion-panel-1" hidden>
+              <p class="accordion__details">
+                You can invite up to 2 additional users on the Free plan. There
+                is no limit on team members for the Premium plan.
+              </p>
+            </div>
+          </li>
+          <li class="accordion" role="listitem">
             <h2 class="accordion__title">
               <button
                 type="button"
-                class="accordion__button"
+                class="accordion__button js-toggle"
+                aria-controls="accordion-panel-2"
                 aria-expanded="false"
               >
                 <span class="accordion__summary">
@@ -84,16 +89,19 @@
                 </svg>
               </button>
             </h2>
-            <p class="accordion__details">
-              No more than 2GB. All files in your account must fit your allotted
-              storage space.
-            </p>
-          </div>
-          <div class="accordion__item">
+            <div class="accordion__panel" id="accordion-panel-2" hidden>
+              <p class="accordion__details">
+                No more than 2GB. All files in your account must fit your
+                allotted storage space.
+              </p>
+            </div>
+          </li>
+          <li class="accordion" role="listitem">
             <h2 class="accordion__title">
               <button
                 type="button"
-                class="accordion__button"
+                class="accordion__button js-toggle"
+                aria-controls="accordion-panel-3"
                 aria-expanded="false"
               >
                 <span class="accordion__summary">
@@ -117,16 +125,19 @@
                 </svg>
               </button>
             </h2>
-            <p class="accordion__details">
-              Click “Forgot password” from the login page or “Change password”
-              from your profile page. A reset link will be emailed to you.
-            </p>
-          </div>
-          <div class="accordion__item">
+            <div class="accordion__panel" id="accordion-panel-3" hidden>
+              <p class="accordion__details">
+                Click “Forgot password” from the login page or “Change password”
+                from your profile page. A reset link will be emailed to you.
+              </p>
+            </div>
+          </li>
+          <li class="accordion" role="listitem">
             <h2 class="accordion__title">
               <button
                 type="button"
-                class="accordion__button"
+                class="accordion__button js-toggle"
+                aria-controls="accordion-panel-4"
                 aria-expanded="false"
               >
                 <span class="accordion__summary">
@@ -150,16 +161,19 @@
                 </svg>
               </button>
             </h2>
-            <p class="accordion__details">
-              Yes! Send us a message and we’ll process your request no questions
-              asked.
-            </p>
-          </div>
-          <div class="accordion__item">
+            <div class="accordion__panel" id="accordion-panel-4" hidden>
+              <p class="accordion__details">
+                Yes! Send us a message and we’ll process your request no
+                questions asked.
+              </p>
+            </div>
+          </li>
+          <li class="accordion" role="listitem">
             <h2 class="accordion__title">
               <button
                 type="button"
-                class="accordion__button"
+                class="accordion__button js-toggle"
+                aria-controls="accordion-panel-5"
                 aria-expanded="false"
               >
                 <span class="accordion__summary">
@@ -183,12 +197,14 @@
                 </svg>
               </button>
             </h2>
-            <p class="accordion__details">
-              Chat and email support is available 24/7. Phone lines are open
-              during normal business hours.
-            </p>
-          </div>
-        </div>
+            <div class="accordion__panel" id="accordion-panel-5" hidden>
+              <p class="accordion__details">
+                Chat and email support is available 24/7. Phone lines are open
+                during normal business hours.
+              </p>
+            </div>
+          </li>
+        </ul>
       </div>
     </main>
   </body>
