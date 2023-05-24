@@ -30,21 +30,24 @@ body {
 
 /* || FAQ accordion card component styles */
 .accordion-card {
+  max-width: 20.4375rem;
   margin: 8.5rem 1.5rem 2rem;
   padding: 3rem 1.5rem;
-  max-width: 20.4375rem;
   background-color: white;
   background-image: url("../images/bg-pattern-mobile.svg");
   background-position: 50% 0;
   background-repeat: no-repeat;
   border-radius: 1.4375rem;
   box-shadow: 0 3.125rem 3.125rem -1.25rem hsl(261 75% 27% / 0.5);
+  display: grid;
+  gap: 3.75rem;
 }
 
 .accordion-card::before {
   content: "";
   display: block;
-  margin: -9.8rem auto 3.75rem;
+  margin-top: -9.8rem;
+  margin-inline: auto;
   background: no-repeat url("../images/illustration-woman-online-mobile.svg");
   max-width: 14.8125rem;
   width: 100%;
@@ -62,7 +65,7 @@ body {
 
 .accordion-list {
   margin: 0;
-  padding: 0;
+  padding-left: 0;
 }
 
 .accordion {
@@ -112,4 +115,29 @@ body {
 
 .accordion__details {
   margin-bottom: 1rem;
+}
+
+@media (min-width: 60rem) {
+  .accordion-card {
+    max-width: 57.5rem;
+    margin-top: 2rem;
+    padding: 4.0625rem 5.9375rem 5rem 0;
+    grid-template-columns: 24.25rem 21.875rem;
+    gap: 5.4375rem;
+    background-image: url("../images/bg-pattern-desktop.svg");
+    background-position: left -36rem top -18.75rem;
+  }
+
+  .accordion-card::before {
+    background: no-repeat url("../images/illustration-woman-online-desktop.svg");
+    background-position: right;
+    max-width: 29.5rem;
+    height: 22.4375rem;
+    margin: 0;
+  }
+
+  .accordion-card__heading {
+    text-align: left;
+    margin-bottom: 2.6875rem;
+  }
 }
