@@ -157,4 +157,8 @@ body {
     text-align: left;
     margin-bottom: 2.6875rem;
   }
+
+  .accordion__title {
+    font-size: 0.875rem;
+  }
 }
